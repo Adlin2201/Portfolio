@@ -1,47 +1,141 @@
-header{
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
     background-color: royalblue;
-    color:white;
+    color: white;
     text-align: center;
     padding: 40px 20px;
 }
-header h1{
-    font-size: 40px;
+
+header h1 {
+    font-size: 2.5rem;
     margin: 10px 0;
 }
-header h2{
-    font-size: 22px;
+
+header h2 {
+    font-size: 1.3rem;
     font-weight: normal;
-    margin: 5px 0 15px 0;
+    margin-bottom: 10px;
 }
-header p{
-    font-size: 16px;
-    margin: 8px 0;
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0;
 }
-body {
-    background-color: aliceblue;
-}
-section{
-    background-color: white;
-    padding: 20px;
-    margin: 30px 30px 30px 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-}
+
+/* Button */
 button {
+    margin-top: 15px;
     background-color: white;
     color: royalblue;
     border: none;
-    padding: 10px 10px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
-button:hover{
+
+button:hover {
     background-color: lightgray;
 }
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Skills */
 #skills ul {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+#skills li {
+    background: #eef2ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Projects */
+article {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: royalblue;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ===================== */
+/* 📱 MOBILE RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
 }
